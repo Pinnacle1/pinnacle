@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pinnacle Solutions - Leading provider of next-generation AI, cloud computing, and software development services. Transform your business with our cutting-edge solutions.">
-    <meta name="keywords" content="AI solutions, machine learning, cloud computing, software development, digital transformation, pinnacle solutions">
+    <meta name="keywords" content="AI solutions, machine learning, cloud computing, software development, digital transformation, pinnacle solutions, pinnacle">
     <meta name="author" content="Pinnacle Solutions">
     <meta name="robots" content="index, follow">
     
@@ -25,7 +25,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';">
     <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#0f0f23">
+    <meta name="theme-color" content="#fefbf3">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
@@ -332,7 +332,7 @@
                         <a href="#why-pinnacle" class="text-gray-300 hover:text-primary px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300">Pinnacle</a>
                         <a href="#blog" class="text-gray-300 hover:text-primary px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300">Blog</a>
                         <a href="#services" class="text-gray-300 hover:text-primary px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300">Services</a>
-                        <a href="#internships" class="text-gray-300 hover:text-primary px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300">Join US</a>
+                        <a href="#" class="text-gray-300 hover:text-primary px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300" onclick="showInternshipsSection(); return false;">Join US</a>
                     </div>
                 </div>
                 
@@ -364,7 +364,7 @@
                 <a href="#why-pinnacle" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-lg text-base font-medium transition-all duration-300">Pinnacle</a>
                 <a href="#blog" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-lg text-base font-medium transition-all duration-300">Blog</a>
                 <a href="#services" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-lg text-base font-medium transition-all duration-300">Services</a>
-                <a href="#internships" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-lg text-base font-medium transition-all duration-300">Join US</a>
+                <a href="#" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-lg text-base font-medium transition-all duration-300" onclick="showInternshipsSection(); return false;">Join US</a>
                 <a href="#contact" class="btn-primary text-white font-medium py-2 px-6 rounded-lg text-base mx-3 mt-2 inline-block" onclick="showContactSection()">Get Touch</a>
             </div>
         </div>
@@ -396,9 +396,8 @@
                         Start Your Project
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
-                    <a href="#internships" class="glass-effect text-gray-300 hover:text-white font-semibold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:scale-105">
+                    <a href="#" class="glass-effect text-gray-300 hover:text-white font-semibold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:scale-105" onclick="showInternshipsSection(); return false;">
                         Join US
-                        <i class="fas fa-graduation-cap ml-2"></i>
                     </a>
                 </div>
             </div>
@@ -512,7 +511,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <div class="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-6">
-                    <span class="text-sm text-primary font-medium">BLOGS</span>
+                    <span class="text-sm text-primary font-medium">Blogs</span>
                 </div>
                 <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6">
                     Latest <span class="gradient-text">Insights</span>
@@ -581,8 +580,10 @@
                                     <p class="text-gray-400 text-sm mb-3">Explore how AI is revolutionizing healthcare, finance, and manufacturing sectors...</p>
                                     <div class="flex items-center text-xs text-gray-500">
                                         <span>Aug 28, 2025</span>
-                                        <span class="mx-2"></span>
+                                        <span class="mx-2">•</span>
                                         <span>5 min read</span>
+                                        <span class="mx-2">•</span>
+                                        <span class="blog-view-count flex items-center"><i class="far fa-eye mr-1"></i>0 views</span>
                                     </div>
                                 </div>
                                 <div class="flex-shrink-0">
@@ -696,6 +697,7 @@
     <!-- Internships Section -->
     <section id="internships" class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
+            <div class="mb-12"></div>
             <div class="text-center mb-12">
                 <div class="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-6">
                     <span class="text-sm text-primary font-medium">Internship Program</span>
@@ -741,6 +743,116 @@
                         <li class="flex items-center">
                             <i class="fas fa-check text-primary mr-3"></i>
                             <span>MLOps & Model Deployment</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                    </div>
+                </div>
+
+                <div class="card-hover glass-effect rounded-2xl p-8 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-python text-2xl text-white"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-2xl font-heading font-bold">Python Developer Track</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Master Python development from fundamentals to advanced frameworks with hands-on projects and industry best practices.
+                    </p>
+                    <ul class="space-y-3 text-gray-300 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Python Fundamentals & OOP</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Django & Flask Web Development</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Database Design & Integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>RESTful APIs & Microservices</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Testing & Deployment</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                    </div>
+                </div>
+
+                <!-- LLM Engineer Track -->
+                <div class="card-hover glass-effect rounded-2xl p-8 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-robot text-2xl text-white"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-2xl font-heading font-bold">LLM Engineer Track</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Specialize in Large Language Models, prompt engineering, and AI application development with cutting-edge tools.
+                    </p>
+                    <ul class="space-y-3 text-gray-300 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>LLM Architecture & Fine-tuning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Prompt Engineering & Optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Vector Databases & RAG Systems</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>LangChain & AI Frameworks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Model Deployment & Scaling</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                    </div>
+                </div>
+
+                <!-- UI/UX Designer Track -->
+                <div class="card-hover glass-effect rounded-2xl p-8 group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-palette text-2xl text-white"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-2xl font-heading font-bold">UI/UX Designer Track</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Create exceptional user experiences through design thinking, prototyping, and modern design tools and methodologies.
+                    </p>
+                    <ul class="space-y-3 text-gray-300 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Design Thinking & User Research</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Figma & Prototyping Tools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Visual Design & Typography</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Interaction Design & Animation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-3"></i>
+                            <span>Usability Testing & Iteration</span>
                         </li>
                     </ul>
                     <div class="text-center">
@@ -874,9 +986,6 @@
     <!-- Contact Section (Hidden) -->
     <section id="contact" style="display: none;" class="min-h-screen py-16 px-4 sm:px-6 lg:px-8 pt-32">
         <div class="max-w-7xl mx-auto">
-            <!-- Back button -->
-
-            
             <div class="text-center mb-12">
                 <div class="inline-flex items-center px-4 py-2 rounded-full glass-effect mb-6">
                     <span class="text-sm text-primary font-medium">Get In Touch</span>
@@ -889,107 +998,80 @@
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- Contact Form -->
-                <div class="glass-effect rounded-2xl p-8">
-                    <h3 class="text-2xl font-heading font-bold mb-8">Send us a message</h3>
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">First Name</label>
-                                <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="John">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
-                                <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Doe">
-                            </div>
+            <!-- Contact Info Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Address Card -->
+                <div class="glass-effect rounded-2xl p-8 text-center">
+                    <h3 class="text-2xl font-heading font-bold mb-4">Our Address</h3>
+                    <p class="text-gray-400">
+                        Coimbatore<br>
+                        Tamil Nadu, India
+                    </p>
+                </div>
+                
+                <!-- Email Card -->
+                <div class="glass-effect rounded-2xl p-8 text-center">
+                    <h3 class="text-2xl font-heading font-bold mb-4">info@pinnaclesolution.com</h3>
+                    <p class="text-gray-400">
+                        Contact Us<br>
+                        Via Email
+                    </p>
+                </div>
+                
+                <!-- Phone Card -->
+                <div class="glass-effect rounded-2xl p-8 text-center">
+                    <h3 class="text-2xl font-heading font-bold mb-4">Ph:+91 8838868452</h3>
+                    <p class="text-gray-400">
+                        Contact Us<br>
+                        Via Phone
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contact Form - Full Width -->
+            <div class="glass-effect rounded-2xl p-8 mb-12">
+                <h3 class="text-2xl font-heading font-bold mb-8">Send us a message</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="John">    
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
                             <input type="email" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="john@example.com">
                         </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Phone</label>
                             <input type="tel" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="+91 98765 43210">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-3000 mb-2">Project Type</label>
-                            <select class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white">
-                                <option value="">Select a service</option>
-                                <option value="web-development">Web Development</option>
-                                <option value="mobile-development">Mobile Development</option>
-                                <option value="ai-ml">AI/ML Solutions</option>
-                                <option value="cloud-services">Cloud Services</option>
-                                <option value="ui-ux">UI/UX Design</option>
-                                <option value="digital-marketing">Digital Marketing</option>
-                            </select>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Project Inquiry">
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                            <textarea rows="4" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Tell us about your project..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full btn-primary text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105">
                             Send Message
                             <i class="fas fa-paper-plane ml-2"></i>
                         </button>
-                    </form>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div class="glass-effect rounded-2xl p-8">
-                        <div class="flex items-center mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mr-4">
-                                <i class="fas fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-heading font-bold text-lg">Location</h4>
-                                <p class="text-gray-400">Coimbatore, Tamil Nadu, India</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
-                            Based in the heart of Tamil Nadu's technology hub, we serve clients globally with cutting-edge digital solutions.
-                        </p>
                     </div>
-                    
-                    <div class="glass-effect rounded-2xl p-8">
-                        <div class="flex items-center mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center mr-4">
-                                <i class="fas fa-envelope text-white"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-heading font-bold text-lg">Email</h4>
-                                <p class="text-gray-400">hello@pinnacleenhance.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
-                            Drop us a line anytime. We'll get back to you within 24 hours with a detailed response.
-                        </p>
-                    </div>
-                    
-                    <div class="glass-effect rounded-2xl p-8">
-                        <div class="flex items-center mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center mr-4">
-                                <i class="fas fa-phone text-white"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-heading font-bold text-lg">Phone</h4>
-                                <p class="text-gray-400">+91 98765 43210</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
-                            Call us during business hours (9 AM - 6 PM IST) for immediate assistance and consultation.
-                        </p>
-                    </div>
-                    
-                    <div class="glass-effect rounded-2xl p-8">
-                        <h4 class="font-heading font-bold text-lg mb-6">Follow Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/company/thepinnacl-esolutions/" target="_blank" class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                                <i class="fab fa-linkedin-in text-white"></i>
-                            </a>
-                        </div>
-                    </div>
+                </form>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="text-center">
+                <h4 class="font-heading font-bold text-lg mb-6">Follow Us</h4>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/company/thepinnacl-esolutions/" target="_blank" class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -999,7 +1081,11 @@
     <section id="blog-reader" style="display: none;" class="min-h-screen py-16 px-4 sm:px-6 lg:px-8 pt-32">
         <div class="max-w-4xl mx-auto">
             <!-- Back button -->
-
+            <div class="mb-8">
+                <button onclick="showMainPage()" class="flex items-center text-gray-400 hover:text-primary transition-colors duration-300">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Home
+                </button>
+            </div>
             
             <!-- Blog Content -->
             <article class="glass-effect rounded-2xl p-8">
@@ -1011,6 +1097,8 @@
                         <span id="blog-date">Aug 28, 2025</span>
                         <span class="mx-2">•</span>
                         <span id="blog-read-time">5 min read</span>
+                        <span class="mx-2">•</span>
+                        <span id="blog-view-count">0 views</span>
                         <span class="mx-2">•</span>
                         <span>By Pinnacle Solutions</span>
                     </div>
@@ -1141,8 +1229,8 @@
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        // Check for saved theme preference or default to 'dark'
-        const currentTheme = localStorage.getItem('theme') || 'dark';
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
         
         // Apply the current theme
         if (currentTheme === 'light') {
@@ -1213,10 +1301,10 @@
                 }
             });
             
-            // Hide footer
+            // Show footer - we want to keep the main footer
             const footer = document.querySelector('footer');
             if (footer) {
-                footer.style.display = 'none';
+                footer.style.display = 'block';
             }
             
             // Hide blog reader
@@ -1230,6 +1318,49 @@
             if (contactSection) {
                 contactSection.style.display = 'block';
                 contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Show internships section function
+        function showInternshipsSection() {
+            // Hide all main sections
+            const sections = ['home', 'why-pinnacle', 'blog', 'services'];
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.style.display = 'none';
+                }
+            });
+            
+            // Show footer - we want to keep the main footer
+            const footer = document.querySelector('footer');
+            if (footer) {
+                footer.style.display = 'block';
+            }
+            
+            // Hide blog reader
+            const blogReader = document.getElementById('blog-reader');
+            if (blogReader) {
+                blogReader.style.display = 'none';
+            }
+            
+            // Hide contact section
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.style.display = 'none';
+            }
+            
+            // Show internships section
+            const internshipsSection = document.getElementById('internships');
+            if (internshipsSection) {
+                internshipsSection.style.display = 'block';
+                internshipsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
             }
         }
 
@@ -1253,10 +1384,10 @@
                 }
             });
             
-            // Hide footer
+            // Show footer - we want to keep the main footer
             const footer = document.querySelector('footer');
             if (footer) {
-                footer.style.display = 'none';
+                footer.style.display = 'block';
             }
             
             // Hide contact section
@@ -1265,8 +1396,17 @@
                 contactSection.style.display = 'none';
             }
             
+            // Update view count
+            const viewCount = updateBlogViewCount(blogId);
+            
             // Load blog content based on blogId
             loadBlogContent(blogId);
+            
+            // Update view count display in blog reader
+            const viewCountElement = document.getElementById('blog-view-count');
+            if (viewCountElement) {
+                viewCountElement.textContent = viewCount + (viewCount === 1 ? ' view' : ' views');
+            }
             
             // Show blog reader
             const blogReader = document.getElementById('blog-reader');
@@ -1276,6 +1416,20 @@
             }
         }
 
+        // Get blog view counts from localStorage
+        function getBlogViewCounts() {
+            const viewCounts = localStorage.getItem('blogViewCounts');
+            return viewCounts ? JSON.parse(viewCounts) : {};
+        }
+        
+        // Update blog view count
+        function updateBlogViewCount(blogId) {
+            const viewCounts = getBlogViewCounts();
+            viewCounts[blogId] = (viewCounts[blogId] || 0) + 1;
+            localStorage.setItem('blogViewCounts', JSON.stringify(viewCounts));
+            return viewCounts[blogId];
+        }
+        
         // Load blog content function
         function loadBlogContent(blogId) {
             const blogData = {
@@ -1321,8 +1475,8 @@
 
         // Show main page function
         function showMainPage() {
-            // Show all main sections (this is the normal website view)
-            const sections = ['home', 'why-pinnacle', 'blog', 'services', 'internships'];
+            // Show main sections (this is the normal website view)
+            const sections = ['home', 'why-pinnacle', 'blog', 'services'];
             sections.forEach(sectionId => {
                 const section = document.getElementById(sectionId);
                 if (section) {
@@ -1336,7 +1490,12 @@
                 footer.style.display = 'block';
             }
             
-            // Hide contact and blog reader sections
+            // Hide internships, contact and blog reader sections
+            const internshipsSection = document.getElementById('internships');
+            if (internshipsSection) {
+                internshipsSection.style.display = 'none';
+            }
+            
             const contactSection = document.getElementById('contact');
             if (contactSection) {
                 contactSection.style.display = 'none';
@@ -1358,14 +1517,25 @@
 
         // Initialize the page to show all sections by default
         document.addEventListener('DOMContentLoaded', function() {
-            // Ensure all main sections are visible by default
-            const sections = ['home', 'why-pinnacle', 'blog', 'services', 'internships'];
+            console.log("DOM fully loaded");
+            
+            // Ensure main sections are visible by default
+            const sections = ['home', 'why-pinnacle', 'blog', 'services'];
             sections.forEach(sectionId => {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     section.style.display = 'block';
                 }
             });
+            
+            // Hide internships section by default
+            const internshipsSection = document.getElementById('internships');
+            if (internshipsSection) {
+                internshipsSection.style.display = 'none';
+                console.log("Internships section hidden");
+            } else {
+                console.log("Internships section not found");
+            }
             
             // Ensure footer is visible
             const footer = document.querySelector('footer');
@@ -1387,10 +1557,22 @@
 
         // Make functions globally available
         window.showContactSection = showContactSection;
+        window.showInternshipsSection = showInternshipsSection;
         window.showBlogSection = showBlogSection;
         window.showBlogReader = showBlogReader;
         window.showMainPage = showMainPage;
         window.showAllSections = showAllSections;
+        
+        // Ensure Join US links work properly
+        document.addEventListener('DOMContentLoaded', function() {
+            const joinUsLinks = document.querySelectorAll('a[onclick*="showInternshipsSection"]');
+            joinUsLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showInternshipsSection();
+                });
+            });
+        });
         
         // Update copyright year dynamically
         function updateCopyrightYear() {
@@ -1405,7 +1587,7 @@
             updateCopyrightYear();
         });
 
-        // Blog hover functionality for featured image
+        // Blog hover functionality for featured image and initialize view counts
         document.addEventListener('DOMContentLoaded', function() {
             const blogItems = document.querySelectorAll('.blog-item');
             const featuredImage = document.getElementById('featured-blog-image');
@@ -1413,8 +1595,18 @@
             const featuredCategory = document.getElementById('featured-blog-category');
             const featuredExcerpt = document.getElementById('featured-blog-excerpt');
             
-            blogItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
+            // Get blog view counts
+            const viewCounts = getBlogViewCounts();
+            
+            // Initialize view count elements
+                blogItems.forEach(item => {
+                const blogId = item.getAttribute('data-blog-id') || (item.getAttribute('onclick') && item.getAttribute('onclick').match(/'([^']+)'/)[1]);
+                const viewCountContainer = item.querySelector('.blog-view-count');
+                
+                if (viewCountContainer && blogId) {
+                    const count = viewCounts[blogId] || 0;
+                    viewCountContainer.textContent = count + (count === 1 ? ' view' : ' views');
+                }                item.addEventListener('mouseenter', function() {
                     const title = this.getAttribute('data-title');
                     const category = this.getAttribute('data-category');
                     const excerpt = this.getAttribute('data-excerpt');
