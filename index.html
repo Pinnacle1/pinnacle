@@ -289,7 +289,7 @@
         "@type": "ContactPoint",
         "telephone": "",
         "contactType": "customer service",
-        "email": "contact@pinnaclesolution.tech"
+        "email": "info@pinnaclesolution.tech"
       },
       "sameAs": [
         "https://twitter.com/pinnaclesolution",
@@ -999,31 +999,24 @@
             </div>
             
             <!-- Contact Info Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <!-- Address Card -->
                 <div class="glass-effect rounded-2xl p-8 text-center">
-                    <h3 class="text-2xl font-heading font-bold mb-4">Our Address</h3>
+                    <h3 class="text-2xl font-heading font-bold mb-4">Coimbatore<br>
+                        Tamil Nadu, India</h3>
                     <p class="text-gray-400">
-                        Coimbatore<br>
-                        Tamil Nadu, India
+                        Our Address
                     </p>
                 </div>
                 
                 <!-- Email Card -->
                 <div class="glass-effect rounded-2xl p-8 text-center">
-                    <h3 class="text-2xl font-heading font-bold mb-4">info@pinnaclesolution.com</h3>
+                    <h3 class="text-2xl font-heading font-bold mb-4">
+                        <a href="mailto:info@pinnaclesolution.tech" class="hover:text-primary transition-colors duration-300">info@pinnaclesolution.tech</a>
+                    </h3>
                     <p class="text-gray-400">
                         Contact Us<br>
                         Via Email
-                    </p>
-                </div>
-                
-                <!-- Phone Card -->
-                <div class="glass-effect rounded-2xl p-8 text-center">
-                    <h3 class="text-2xl font-heading font-bold mb-4">Ph:+91 8838868452</h3>
-                    <p class="text-gray-400">
-                        Contact Us<br>
-                        Via Phone
                     </p>
                 </div>
             </div>
@@ -1031,37 +1024,38 @@
             <!-- Contact Form - Full Width -->
             <div class="glass-effect rounded-2xl p-8 mb-12">
                 <h3 class="text-2xl font-heading font-bold mb-8">Send us a message</h3>
-                <form class="space-y-6">
+                <form id="contact-form" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Name</label>
-                            <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="John">    
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="John" required>    
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="john@example.com">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="john@example.com" required>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Phone</label>
-                            <input type="tel" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="+91 98765 43210">
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="+91 98765 43210">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
-                            <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Project Inquiry">
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Project Inquiry" required>
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                        <textarea rows="4" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Tell us about your project..."></textarea>
+                        <textarea rows="4" id="message" name="message" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Tell us about your project..." required></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="btn-primary text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105">
+                        <button type="submit" id="submit-btn" class="btn-primary text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105">
                             Send Message
                             <i class="fas fa-paper-plane ml-2"></i>
                         </button>
                     </div>
+                    <div id="form-status" class="text-center mt-4" style="display: none;"></div>
                 </form>
             </div>
             
@@ -1071,6 +1065,12 @@
                 <div class="flex justify-center space-x-4">
                     <a href="https://www.linkedin.com/company/thepinnacl-esolutions/" target="_blank" class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300">
                         <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                    <a href="mailto:info@pinnaclesolution.tech" target="_blank" class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-envelope text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pinnacle.solution/" target="_blank" class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-xl flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-instagram text-white"></i>
                     </a>
                 </div>
             </div>
@@ -1214,6 +1214,12 @@
                 <div class="flex items-center">
                     <a href="https://www.linkedin.com/company/thepinnacl-esolutions/" target="_blank" class="text-gray-400 hover:text-primary transition-colors duration-300">
                         <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="mailto:info@pinnaclesolution.tech" class="ml-6 text-gray-400 hover:text-primary transition-colors duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pinnacle.solution/" target="_blank" class="ml-6 text-gray-400 hover:text-primary transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
                     </a>
                 </div>
             </div>
@@ -1906,7 +1912,71 @@
             background: rgba(0, 0, 0, 0.2) !important;
         }
     </style>
+    
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </div>
+
+<!-- Contact Form Script -->
+<script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize EmailJS - Replace with your actual user ID from emailjs.com
+        emailjs.init("YOUR_USER_ID");
+        
+        // Get form element
+        const form = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+        
+        // Handle form submission
+        form.addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Show loading state
+            const originalButtonText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Prepare template parameters for the email
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_email: 'info@pinnaclesolution.tech'
+            };
+            
+            // Send the email using EmailJS
+            // Replace these with your actual service ID and template ID from emailjs.com
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    // Success message
+                    formStatus.innerHTML = '<div class="p-4 bg-green-500/20 rounded-lg text-green-400"><i class="fas fa-check-circle mr-2"></i>Your message has been sent successfully to info@pinnaclesolution.tech!</div>';
+                    formStatus.style.display = 'block';
+                    
+                    // Reset the form
+                    form.reset();
+                    
+                    console.log('SUCCESS!', response.status, response.text);
+                })
+                .catch(function(error) {
+                    // Error message
+                    formStatus.innerHTML = '<div class="p-4 bg-red-500/20 rounded-lg text-red-400"><i class="fas fa-exclamation-circle mr-2"></i>An error occurred. Please try again later or email us directly at <a href="mailto:info@pinnaclesolution.tech" class="underline hover:text-primary">info@pinnaclesolution.tech</a>.</div>';
+                    formStatus.style.display = 'block';
+                    
+                    console.error('FAILED...', error);
+                })
+                .finally(function() {
+                    // Reset button state
+                    submitBtn.innerHTML = originalButtonText;
+                    submitBtn.disabled = false;
+                });
+        });
+    });
+</script>
 
 </body>
 </html>
